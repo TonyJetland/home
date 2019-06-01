@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Permanent+Marker|Questrial|Special+Elite" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tony's Home Repair</title>
+</head>
+
+<style>
+    body {
+
+        /* DARK WOOD */
+        /* background: url('https://i.imgur.com/hGPPCCH.jpg'); */
+        /* DISTRESSED WOOD */
+        /* background: url('https://i.imgur.com/JkwDMZ0.jpg'); */
+        /* LIGHT WOOD */
+        /* background: url('https://i.imgur.com/4TxHI1h.png'); */
+        /* CONSTRUCTION HAT AND SUNSET */
+        /* background: url('https://i.imgur.com/bOcZ9NE.jpg'); */
+        /* BLACK AND WHITE CONST ZONE */
+        background: url('https://i.imgur.com/zi5nJ1z.jpg');
+        background-size: cover;
+    }
+
+    /* **********************/
+    /******* HEADER *********/
+    /* ******************** */
+
+    .headerSection {
+        height: 130px;
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        background: black;
+        border-bottom: 2px ridge rgb(182, 170, 100);
+    }
+
+    #topLeft {
+        float: left;
+        width: 30%;
+        font-family: 'Questrial', sans-serif;
+        background: black;
+    }
+
+    #topCenter {
+        float: left;
+        width: 40%;
+        background: black;
+    }
+
+    #topRight {
+        float: left;
+        width: 30%;
+        font-family: 'Questrial', sans-serif;
+        background: black;
+    }
+
+
+
+    #name {
+        font-size: 40px;
+        font-family: 'cinzel', serif;
+        color: rgb(241, 238, 216);
+        text-shadow: 1px 1px gold;
+    }
+
+    .highlight {
+        color: rgb(255, 255, 255);
+    }
+
+    .miniList {
+        font-size: 15px;
+        font-family: 'questrial', sans-serif;
+        padding: 5px;
+        color: rgb(182, 170, 100);
+        text-shadow: 1px 1px rgb(51, 47, 21);
+    }
+
+    .med {
+        color: rgb(228, 214, 133);
+    }
+
+    .medL {
+        color: rgb(226, 216, 161);
+    }
+
+    .light {
+        color: rgb(250, 241, 192);
+    }
+
+
+    /* Top Left Styling */
+
+    .add {
+        padding: 5px;
+    }
+
+    #add-po {
+        color: rgb(238, 234, 204);
+        padding-top: 20px;
+    }
+
+    #add-city {
+        color: rgb(206, 198, 151);
+    }
+
+    #add-lisc {
+        font-family: 'special elite', cursive;
+        padding-top: 20px;
+        color: rgb(165, 157, 113);
+    }
+
+    /*  Top Right Styling  */
+    .cont {
+        padding: 5px;
+    }
+
+    #cont-cell {
+        padding-top: 20px;
+        color: rgb(240, 235, 206);
+    }
+
+    #cont-fax {
+        color: rgb(206, 198, 151);
+    }
+
+    #cont-email {
+        font-family: 'special elite', cursive;
+        padding-top: 20px;
+        color: rgb(165, 157, 113);
+    }
+
+
+
+
+    /* ********************* */
+    /* **** CENTER PAGE **** */
+    /* ********************** */
+
+    #leftCol {
+        float: left;
+        width: 24.5%;
+        margin-top: 1%;
+    }
+
+    #centerCol {
+        float: left;
+        width: 20%;
+        background: url('https://i.imgur.com/7eXfocf.png');
+        border: 3px ridge black;
+        margin-top: 1%;
+        margin-right: 1%;
+    }
+
+    #centerColTwo {
+        float: left;
+        width: 30%;
+        margin-top: 1%;
+        /* background: url('https://i.imgur.com/mEMCaIz.jpg'); */
+        background: none;
+    }
+
+    #rightCol {
+        float: left;
+        width: 24.5%;
+        margin-top: 1%;
+    }
+
+    .tonyImg {
+        width: 90%;
+        padding: 3%;
+        border: 3px ridge black;
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+    }
+
+    /* <!-- OPTIONAL STYLING FOR GOLD LETTERS --> */
+
+    /* #centerCol {
+        float: left;
+        width: 45%;
+        background: url('https://i.imgur.com/7eXfocf.png');
+        border: 3px ridge black;
+        margin-top: 1%;
+        margin-right: 1%;
+    }
+
+
+  .handImg {
+        height: 50px;
+    }
+
+    .item {
+        height: 60px;
+        border-bottom: 2px ridge black;
+        visibility: hidden;
+    }
+
+    .item:hover {
+        visibility: visible;
+    }
+
+    .letter {
+        height: 50px;
+        visibility: visible;
+    } */
+
+
+    /* <!-- STYLING FOR REGULAR LETTERING --> */
+
+    .label {
+        height: 75px;
+        font-family: 'special elite', cursive;
+        color: rgb(165, 157, 113);
+        font-size: 30px;
+        visibility: hidden;
+    }
+
+    .link {
+        border-bottom: 2px ridge black;
+    }
+
+    #toplink {
+        border-top: 2px ridge black;
+    }
+
+    .word {
+        visibility: visible;
+        text-shadow: 1px 1px gold;
+        color: rgb(209, 203, 162);
+        text-decoration: none;
+    }
+
+    .wordLighter {
+        color: rgb(235, 230, 199);
+        text-shadow: 1px 1px gold;
+    }
+
+    .wordLightest {
+        color: rgb(250, 246, 224);
+        text-shadow: 1px 1px gold;
+    }
+
+    .logoImg {
+        height: 40px;
+    }
+
+    .label:hover,
+    article:hover,
+    .logoImg:hover {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .word:hover {
+        padding-bottom: 4px;
+        border-bottom: 2px ridge rgb(201, 56, 12);
+    }
+</style>
+
+
+<body>
+
+    <!-- *************** HEADER ***************** -->
+
+    <center>
+
+        <article id='header'>
+
+            <div class='headerSection' id='topLeft'>
+                <div class='add' id='add-po'>PO Box 1601</div>
+                <div class='add' id='add-city'>Martinez, CA 94553</div>
+                <div class='add' id='add-lisc'>License #807856</div>
+            </div>
+
+            <div class='headerSection' id='topCenter'>
+                <div id='name'>Ton<span class='highlight'>y Jet</span>land</div>
+                <div id='nameMini'>
+                    <div class='miniList'>
+                        <!-- Dividing the words to color them separately and add 'highlights' -->
+                        Genera<span class='med'>l Contr</span><span class='medL'>actor | K</span><span class='light'>itchens
+                            & B</span><span class='medL'>aths | W</span><span class='med'>indow</span>s & Doors
+                    </div>
+
+                </div>
+            </div>
+
+            <div class='headerSection' id='topRight'>
+                <div class='cont' id='cont-cell'>Cell: 925.577.1926</div>
+                <div class='cont' id='cont-fax'>Fax: 925.228.1926</div>
+                <div class='cont' id='cont-email'>TonysHR@comcast.net</div>
+            </div>
+
+        </article>
+
+    </center>
+
+
+    <!-- ************CONTENT******************* -->
+
+
+    <!-- This empty col is left side padding -->
+    <div id='leftCol'>
+    </div>
+
+
+
+    <!-- Port labels and links will be displayed here. -->
+
+    <!-- THE COMMENTED OUT SECTION IS FOR AN OPTIONAL LETTERING STYLE. 
+        PLEASE ACTIVATE THE STYLES ABOVE IF YOU ACTIVATE THIS PORTION OF THE HTML, 
+        AND COMMENT OUT THE CENTERCOL BELOW THIS ONE. -->
+    <!-- <div id='centerCol'>
+        <div class='item' id='kitchenItem'>
+            <img src='https://i.imgur.com/YQnku1M.png' class='handImg'>
+            <img id='kitk' class='kitchen letter' src="https://i.imgur.com/sciKGgD.png">
+            <img id='kiti' class='kitchen letter' src="https://i.imgur.com/dJ5vBal.png">
+            <img id='kitt' class='kitchen letter' src="https://i.imgur.com/hNB4Qqj.png">
+            <img id='kitc' class='kitchen letter' src="https://i.imgur.com/ZozgcUU.png">
+            <img id='kith' class='kitchen letter' src="https://i.imgur.com/cQVEu8i.png">
+            <img id='kite' class='kitchen letter' src="https://i.imgur.com/DQWCU5i.png">
+            <img id='kitn' class='kitchen letter' src="https://i.imgur.com/yO3VqPl.png">
+        </div>
+
+        <div class='item' id='bathroomItem'>
+            <img src='https://i.imgur.com/YQnku1M.png' class='handImg'>
+            <img id='bathb' class='bathroom letter' src="https://i.imgur.com/DdSUmpl.png">
+            <img id='batha' class='bathroom letter' src="https://i.imgur.com/FX7JJVO.png">
+            <img id='batht' class='bathroom letter' src="https://i.imgur.com/hNB4Qqj.png">
+            <img id='bathh' class='bathroom letter' src="https://i.imgur.com/cQVEu8i.png">
+            <img id='bathr' class='bathroom letter' src="https://i.imgur.com/W6D4crq.png">
+            <img id='batho1' class='bathroom letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='batho2' class='bathroom letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='bathm' class='bathroom letter' src="https://i.imgur.com/f8Qyu6x.png">
+        </div>
+
+        <div class='item' id='windowsItem'>
+            <img src='https://i.imgur.com/YQnku1M.png' class='handImg'>
+            <img id='winw' class='windows letter' src="https://i.imgur.com/7AYhEAI.png">
+            <img id='wini' class='windows letter' src="https://i.imgur.com/dJ5vBal.png">
+            <img id='winn' class='windows letter' src="https://i.imgur.com/yO3VqPl.png">
+            <img id='wind' class='windows letter' src="https://i.imgur.com/Hb1RdZY.png">
+            <img id='wino' class='windows letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='winw2' class='windows letter' src="https://i.imgur.com/7AYhEAI.png">
+            <img id='wins' class='windows letter' src="https://i.imgur.com/q0gOFi3.png">
+        </div>
+
+        <div class='item' id='doorsItem'>
+            <img src='https://i.imgur.com/YQnku1M.png' class='handImg'>
+            <img id='doord' class='doors letter' src="https://i.imgur.com/Hb1RdZY.png">
+            <img id='dooro' class='doors letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='dooro2' class='doors letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='doorr' class='doors letter' src="https://i.imgur.com/W6D4crq.png">
+            <img id='doors' class='doors letter' src="https://i.imgur.com/q0gOFi3.png">
+        </div>
+
+        <div class='item' id='resourcesItem'>
+            <img src='https://i.imgur.com/YQnku1M.png' class='handImg'>
+            <img id='rer' class='resources letter' src="https://i.imgur.com/W6D4crq.png">
+            <img id='ree' class='resources letter' src="https://i.imgur.com/DQWCU5i.png">
+            <img id='res' class='resources letter' src="https://i.imgur.com/q0gOFi3.png">
+            <img id='reo' class='resources letter' src="https://i.imgur.com/I8Au903.png">
+            <img id='reu' class='resources letter' src="https://i.imgur.com/4JjCV4O.png">
+            <img id='rer2' class='resources letter' src="https://i.imgur.com/W6D4crq.png">
+            <img id='rec' class='resources letter' src="https://i.imgur.com/ZozgcUU.png">
+            <img id='ree2' class='resources letter' src="https://i.imgur.com/DQWCU5i.png">
+            <img id='res2' class='resources letter' src="https://i.imgur.com/q0gOFi3.png">
+        </div>
+    </div> -->
+
+    <div id='centerCol'>
+
+        <article class='link' id='toplink'>
+            <div class='label' id='kitchenLab'>
+                <img src='https://i.imgur.com/YQnku1M.png' class='logoImg'>
+                <a href='kitchen.html' class='word'>Kitch<span class='wordLighter'>en</span></a></div>
+        </article>
+
+
+        <article class='link'>
+            <div class='label' id='bathroomLab'>
+                <img src='https://i.imgur.com/YQnku1M.png' class='logoImg'>
+                <a href='bathroom.html' class='word'>Bathr<span class='wordLighter'>oo</span><span class='wordLightest'>m</span></a></div>
+        </article>
+
+        <article class='link'>
+            <div class='label' id='windowLab'>
+                <img src='https://i.imgur.com/YQnku1M.png' class='logoImg'>
+                <a href='windows.html' class='word'>Win<span class='wordLighter'>do</span><span class='wordLightest'>ws</span></a></div>
+        </article>
+
+        <article class='link'>
+            <div class='label' id='doorLab'>
+                <img src='https://i.imgur.com/YQnku1M.png' class='logoImg'>
+                <a href="doors.html" class='word'>Do<span class='wordLighter'>or</span><span class='wordLightest'>s</span></a></div>
+        </article>
+
+        <article class='link' id='bottomlink'>
+            <div class='label' id='resourceLab'>
+                <img src='https://i.imgur.com/YQnku1M.png' class='logoImg'>
+                <a href='resources.html' class='word'>R<span class='wordLighter'>eso</span><span class='wordLightest'>urces</span></a></div>
+        </article>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- This col displays photo of Tony -->
+    <div id='centerColTwo'>
+        <img src='https://i.imgur.com/4XddLUE.jpg' class='tonyImg'>
+    </div>
+
+
+
+    <!-- This empty col is right side padding -->
+    <div id='rightCol'>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
